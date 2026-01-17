@@ -92,6 +92,43 @@
       border-left:3px solid #38bdf8;
     }
 
+
+/* 🧠 Skills Section */
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:14px;
+}
+
+.skill-card{
+  background:#0f172a;
+  border:1px solid #1e293b;
+  padding:14px;
+  border-radius:12px;
+  transition:.3s;
+}
+
+.skill-card:hover{
+  transform:translateY(-4px);
+  border-color:#38bdf8;
+}
+
+.skill-title{
+  font-weight:600;
+  color:#38bdf8;
+  margin-bottom:8px;
+}
+
+.skill-tags span{
+  display:inline-block;
+  background:#1e293b;
+  padding:6px 12px;
+  margin:4px 4px 0 0;
+  border-radius:20px;
+  font-size:13px;
+}
+
+
     footer{ text-align:center; padding:20px; opacity:.6; }
 
     @keyframes fadeIn{from{opacity:0}to{opacity:1}}
@@ -101,11 +138,10 @@
 <body>
 
 <nav>
-  <div><b>Palani 👨‍💻</b></div>
+  <div><b>Palani Murugan A 👨‍💻</b></div>
   <div class="social">
-    <a href="#">LinkedIn</a>
-    <a href="#">GitHub</a>
-    <a href="#">Resume</a>
+    <a href="https://www.linkedin.com/in/palani-murugan-a-9aa7792a0/details/skills/">LinkedIn</a>
+    <a href="https://github.com/iampalanimurugan-cpu">GitHub</a>
   </div>
 </nav>
 
@@ -123,6 +159,71 @@
 <br>
 Skilled in modern JavaScript technologies including JavaScript (JS), TypeScript (TS), jQuery, and Electron. Hands-on experience with popular frameworks and platforms such as Angular, Node.js, and Laravel. Adept at delivering high-quality, scalable, and maintainable software solutions in fast-paced environments.</p>
 </section>
+
+<section>
+  <h2>Top Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <div class="skill-title">Frontend</div>
+      <div class="skill-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>AngularJS</span>
+        <span>Angular Material</span>
+        <span>React.js</span>
+        <span>Bootstrap</span>
+        <span>jQuery</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">Backend</div>
+      <div class="skill-tags">
+        <span>Node.js</span>
+        <span>PHP</span>
+        <span>Laravel</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">Databases</div>
+      <div class="skill-tags">
+        <span>MySQL</span>
+        <span>MongoDB</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">Cloud & DevOps</div>
+      <div class="skill-tags">
+        <span>Amazon Web Services (AWS)</span>
+        <span>GitHub</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">Desktop & Tools</div>
+      <div class="skill-tags">
+        <span>Electron.js</span>
+        <span>Adobe Photoshop</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">Business & Support</div>
+      <div class="skill-tags">
+        <span>Sales Executive</span>
+        <span>Customer Support</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 <section>
   <h2>Projects</h2>
